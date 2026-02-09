@@ -1,0 +1,14 @@
+{
+  "packages": [
+    "cmake",
+    "nodejs"
+  ],
+  "shell": {
+    "init_hook": [
+      "export HOME=$PWD/.home",
+      "export NPM_CONFIG_PREFIX=$PWD/.npm-global",
+      "export NODE_PATH=$PWD/.node_modules",
+      "export PATH=$NPM_CONFIG_PREFIX/bin:$PATH"
+    ]
+  }
+}
